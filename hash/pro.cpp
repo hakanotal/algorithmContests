@@ -38,12 +38,11 @@ int main()
     vector<int> answer;
 
     //  Output
-    ofstream file2("e.out.txt");
+    cout << C << "\n";
     for (auto &a : answer)
     {
-        file2 << a;
+        cout << a;
     }
-    file2.close();
 
     return 0;
 }

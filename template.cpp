@@ -1,3 +1,4 @@
+// g++ -std=c++11 template.cpp -o template & ./template < in.txt > out.txt
 #include <bits/stdc++.h>
 #define M 1e9 + 7 // for modulo
 
@@ -38,12 +39,11 @@ int main()
     vector<int> answer;
 
     //  Output
-    ofstream file2("e.out.txt");
+    cout << C << "\n";
     for (auto &a : answer)
     {
-        file2 << a;
+        cout << a;
     }
-    file2.close();
 
     return 0;
 }
