@@ -62,6 +62,7 @@ int main()
                 int num;
                 ss >> num;
 
+                dp[size - 1][i] = INT_MIN;
                 if (!isPrime(num)) // is num prime?
                 {
                     // Get the two values one step above (and check for boundaries)
@@ -70,13 +71,9 @@ int main()
 
                     // Find max sum
                     int max_above = max(val1, val2);
-                    dp[size - 1][i] = max_above;
                     if (max_above > 0)
                         dp[size - 1][i] = max_above + num;
                 }
-                else // not prime
-                    dp[size - 1][i] = INT_MIN;
-
                 // cout << dp[size - 1][i] << " "; // <-- to see solution vector
 
                 // To reach end of the pyramid as much as possible
