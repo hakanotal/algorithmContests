@@ -1,4 +1,4 @@
-// g++ -std=c++11 template.cpp -o template & ./template < in.txt > out.txt
+// g++ -std=c++11 pro.cpp -o pro && ./pro < in.txt > out.txt
 #include <bits/stdc++.h>
 #define M 1e9 + 7 // for modulo
 
