@@ -4,7 +4,7 @@ import time
 '''
 Problem:
 count how many possible combinations exist for A[i]<B[j]<C[k]
-(if count is higher than 1000000000, return -1)
+(if count is higher than 1e9, return -1)
 '''
 def solution(A,B,C):
     ans = 0
